@@ -1,0 +1,18 @@
+.stepper {
+  display: flex;
+  justify-content: center;
+  padding: 9px;
+  gap: 7px;
+  background-color: #333;
+  color: #fff;
+}
+
+.step {
+  padding: 10px 15px;
+  background-color: #444;
+  border-radius: 5px;
+}
+
+.step.active {
+  background-color: #006bb6;
+}

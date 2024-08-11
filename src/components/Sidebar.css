@@ -1,0 +1,48 @@
+.sidebar {
+  /* background-color: #38352d; */
+  background-color: #444;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+}
+
+.tree-item,
+.sub-tree-item {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #ee6516;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sub-tree {
+  /* padding-left: 12px; */
+  display: grid;
+  height: 150px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 9px;
+  row-gap: 0;
+  overflow: hidden;
+}
+
+.sub-tree-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: #ee6516;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+.tree-item.active {
+  background-color: #ff7f00;
+}
